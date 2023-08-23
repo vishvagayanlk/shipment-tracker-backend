@@ -24,6 +24,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 'latest'
+      - name: Set up environment variables
+        run: echo "MONGO_URL=${{ secrets.MONGO_URL }}" >> $GITHUB_ENV
+      - name: Set up environment variables
+        run: echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> $GITHUB_ENV
+      - name: Set up environment variables
+        run: echo "PORT=${{ secrets.PORT }}" >> $GITHUB_ENV
+      - name: Set up environment variables
+        run: echo "FRONTEND_URL=${{ secrets.FRONTEND_URL }}" >> $GITHUB_ENV
+        
       - name: Install Dependencies
         run: npm install
       # Runs a set of commands using the runners shell

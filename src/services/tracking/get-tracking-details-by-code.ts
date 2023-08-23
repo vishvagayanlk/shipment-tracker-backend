@@ -1,9 +1,7 @@
-import { logger } from "../../core/logger";
 import Tracking from "../../models/Tracking";
 import User from "../../models/User";
 
 const getTrackingDetailsByTrackingCode = async (trackingCode: string) => {
-  logger.info("tracking fun 2", { trackingCode });
   const trackingDetails = await Tracking.findOne({
     trackingCode: trackingCode,
   });

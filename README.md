@@ -17,7 +17,14 @@ This repository contains the backend code for the React project. Follow the inst
 
    ```
 
-1. Start a MongoDB instance using Docker Compose:
+2. Create a `.env` file in the `backend` directory and specify the following environment variables:
+   ```
+   MONGO_URL=mongodb://localhost:27017/shipment-tracking-db
+   SECRET_KEY=key
+   PORT=3000
+   FRONTEND_URL=http://localhost:5173
+   ```
+3. Start a MongoDB instance using Docker Compose:
 
    ```
    docker-compose up -d
