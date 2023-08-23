@@ -12,7 +12,7 @@ This repository contains the backend code for the React project. Follow the inst
 1. Clone this repository to your local machine:
 
    ```
-   git clone https://github.com/your-username/react-backend.git
+   git clone https://github.com:vishvagayanlk/shipment-tracker-backend.git
    cd react-backend`
 
    ```
